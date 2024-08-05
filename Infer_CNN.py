@@ -11,8 +11,8 @@ import os
 Set_Seed(seed=0)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
-X = np.load('C:/Users/lapidott/PycharmProjects/pythonProject/CNN/MNIST/DigitMNIST/raw/data_digit_large.npy')
-Y = np.load('C:/Users/lapidott/PycharmProjects/pythonProject/CNN/MNIST/DigitMNIST/raw/labels_digit.npy').astype(int)
+X = np.load('...MNIST_data_file...')
+Y = np.load('...MNIST_label_file...').astype(int)
 X = Norm_Data(X)
 Y = np.squeeze(Y)
 
